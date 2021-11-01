@@ -130,7 +130,7 @@ CUSTOM FUNCTIONS
 ===================================
 /*/
 function addPager() {
-    var navbtn_html = "<p>&nbsp</p><hr><div class='pager clear-both'><button class='prevBtn' >Previous</button><button class='nextBtn'>Next</button></div>";
+    var navbtn_html = "<p>&nbsp</p><hr><div class='pager clear-both'><button class='prevBtn' >Précédent</button><button class='nextBtn'>Suivant</button></div>";
     var index = $("#navData").attr("data-index");
     var startIndex = 0; //index of first page
     var lastIndex = 37 //index of last page
