@@ -805,18 +805,18 @@ overirdes/*/
                 text-indent: 0px;
             }
             
-            #barriers a,
-            #undue-hardship a,
-            #service-animal a {
+            #les-barrières a,
+            #contraintes-excessives a,
+            #animal-d’-assistance a {
                 color: white;
             }
             
-            #barriers a:hover,
-            #undue-hardship a:hover,
-            #service-animal a:hover {
+            #les-barrières a:hover,
+            #contraintes-excessives a:hover,
+            #animal-d’-assistance a:hover {
                 text-decoration-thickness: 2px;
             }
-            
+         
             #accessible-formats>p.term-title {
                 text-transform: none;
             }
