@@ -254,8 +254,8 @@ function showDefinitionBubble() {
             console.log("showDefinitionBubble-title" + title);
 
             switch (title) {
-                case "The Accessibility for Manitobans Act":
-                    title = "The Accessibility for Manitobans Act (AMA)";
+                case "Loi sur l’accessibilité pour les Manitobains":
+                    title = "Loi sur l’accessibilité pour les Manitobains";
                     break;
                 case "disability people with disabilities":
                     title = "Disability (People with Disabilities)";

@@ -312,7 +312,8 @@ Utilities/*/
             }
             
             ul.list-empty-bullet>li:before {
-                content: '';
+                content: '◦';
+                font-size:large;
             }
             
             .green-text {
@@ -805,13 +806,13 @@ overirdes/*/
                 text-indent: 0px;
             }
             
-            #les-barrières a,
+            #barrières a,
             #contraintes-excessives a,
             #animal-d’-assistance a {
                 color: white;
             }
             
-            #les-barrières a:hover,
+            #barrières a:hover,
             #contraintes-excessives a:hover,
             #animal-d’-assistance a:hover {
                 text-decoration-thickness: 2px;
