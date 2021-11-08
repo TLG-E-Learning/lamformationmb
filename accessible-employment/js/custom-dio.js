@@ -257,24 +257,23 @@ function showDefinitionBubble() {
 
 
             switch (title) {
-                case "The Accessibility for Manitobans Act":
-                    title = "The Accessibility for Manitobans Act (AMA)";
-                    break;
-                case "disability people with disabilities":
-                    title = "Disability (People with Disabilities)";
-                    break;
-                case "accommodations reasonable accommodations":
-                    title = "Accommodations (Reasonable Accommodations)";
-                    break;
-                case "undue hardship":
-                    title = "Undue Hardship";
-                    break;
-                case "public sector organizations":
-                    title = "Public Sector Organizations";
-                    break;
-                case "accessible formats":
-                    title = "Accessible (or Alternate) Format";
-                    break;
+                
+
+                    case "Loi sur l’accessibilité pour les Manitobains":
+                        title = "Loi sur l’accessibilité pour les Manitobains";
+                        break;
+                    case "disability people with disabilities":
+                        title = "Disability (People with Disabilities)";
+                        break;
+                    case "accommodations reasonable accommodations":
+                        title = "Accommodations (Reasonable Accommodations)";
+                        break;
+                    case "handicap personnes handicapées":
+                        title = "Handicap (personnes handicapées)";
+                        break;
+                    case "mesures d adaptation mesures d adaptation raisonnables":
+                        title = "Mesures d’adaptation (mesures d’adaptation raisonnables)"
+                        break;
             }
 
             var html_ = "<span tabindex='0' id='" + data_terms + "' class='" + class_ + " " + extraClass + "' aria-label='Glossary term' role='dialog'><button href='#' class='bubble-close-btn' aria-label='close button'></button><p class='term-title' tabindex='0'>" + title + "</p><p>" + text_content + "</p><a tabindex=0 class='close-btn-link' aria-label='close button' href='javascript:void(0)' onclick='return false' style='color: white'>close</a></span>"

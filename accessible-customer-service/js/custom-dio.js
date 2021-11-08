@@ -254,8 +254,8 @@ function showDefinitionBubble() {
             console.log("showDefinitionBubble-title" + title);
 
             switch (title) {
-                case "Loi sur l’accessibilité pour les Manitobains":
-                    title = "Loi sur l’accessibilité pour les Manitobains";
+                case "The Accessibility for Manitobans Act":
+                    title = "The Accessibility for Manitobans Act (AMA)";
                     break;
                 case "disability people with disabilities":
                     title = "Disability (People with Disabilities)";
@@ -263,11 +263,14 @@ function showDefinitionBubble() {
                 case "accommodations reasonable accommodations":
                     title = "Accommodations (Reasonable Accommodations)";
                     break;
-                case "handicap personnes handicapées":
-                    title = "Handicap (personnes handicapées)";
+                case "undue hardship":
+                    title = "Undue Hardship";
                     break;
-                case "mesures d adaptation mesures d adaptation raisonnables":
-                    title = "Mesures d’adaptation (mesures d’adaptation raisonnables)"
+                case "public sector organizations":
+                    title = "Public Sector Organizations";
+                    break;
+                case "accessible formats":
+                    title = "Accessible (or Alternate) Format";
                     break;
 
             }
