@@ -253,30 +253,30 @@ function showDefinitionBubble() {
             var text_content = $(selector_text).html();
             var title = data_terms.replaceAll("-", " ");
             var termObj = $("[data-terms='" + data_terms + "']");
+            var titleClass="term-title"
 
 
 
             switch (title) {
-                
+                case "Loi sur l’accessibilité pour les Manitobains":
+                    title = "Loi sur l’accessibilité pour les Manitobains";
+                    titleClass="term-title-special";
+                    break;
+                case "organisations de grande taille du secteur public":
+                    title = "Organisations du secteur public";
+                    titleClass="term-title-special";
+                    break;
+                case "formats accessibles":
+                    title = "Format accessible (ou format de substitution)";
+                    titleClass="term-title-special";
+                    break;
+                case "aides à la communication":
+                    title = "Aides à la communication";
+                    titleClass="term-title-special";
+                    break;                
+                }
 
-                    case "Loi sur l’accessibilité pour les Manitobains":
-                        title = "Loi sur l’accessibilité pour les Manitobains";
-                        break;
-                    case "disability people with disabilities":
-                        title = "Disability (People with Disabilities)";
-                        break;
-                    case "accommodations reasonable accommodations":
-                        title = "Accommodations (Reasonable Accommodations)";
-                        break;
-                    case "handicap personnes handicapées":
-                        title = "Handicap (personnes handicapées)";
-                        break;
-                    case "mesures d adaptation mesures d adaptation raisonnables":
-                        title = "Mesures d’adaptation (mesures d’adaptation raisonnables)"
-                        break;
-            }
-
-            var html_ = "<span tabindex='0' id='" + data_terms + "' class='" + class_ + " " + extraClass + "' aria-label='Glossary term' role='dialog'><button href='#' class='bubble-close-btn' aria-label='close button'></button><p class='term-title' tabindex='0'>" + title + "</p><p>" + text_content + "</p><a tabindex=0 class='close-btn-link' aria-label='close button' href='javascript:void(0)' onclick='return false' style='color: white'>close</a></span>"
+            var html_ = "<span tabindex='0' id='" + data_terms + "' class='" + class_ + " " + extraClass + "' aria-label='Glossary term' role='dialog'><button href='#' class='bubble-close-btn' aria-label='close button'></button><p class='" +titleClass +"' tabindex='0'>" + title + "</p><p>" + text_content + "</p><a tabindex=0 class='close-btn-link' aria-label='close button' href='javascript:void(0)' onclick='return false' style='color: white'>close</a></span>"
             let focused = $(document.activeElement)
 
             $(".bubble").remove();
