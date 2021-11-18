@@ -180,7 +180,7 @@ function triggerMenuItem() {
     let el = $("[data-pageindex=" + index + "]");
     $(el).trigger("click");
     $(el).siblings("summary").trigger("click");
-    console.log("menu item triggered")
+    //console.log("menu item triggered")
 }
 
 /*/
@@ -335,7 +335,7 @@ function loadAudioNarration(obj) {
     $("#jp_audio_0").attr("src", audioLink);
     $("#pauseListener").attr("style", "display:none");
     $("img#jp_poster_0").attr("alt", "audio");
-
+    console.log("audioLink:"+audioLink)
 }
 
 
@@ -656,6 +656,8 @@ function updateChangeLangUrl() {
     //Updates the href of "Français/Anglaise" menu item in the footer.
 
     $("#main-cont").ready(function() {
+
+        
         var selector = $(".footer-nav>li:nth-child(2)>a");
         var index = $("#navData").data("index");
 
