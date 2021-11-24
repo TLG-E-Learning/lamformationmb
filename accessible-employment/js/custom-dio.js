@@ -276,7 +276,7 @@ function showDefinitionBubble() {
                     break;                
                 }
 
-            var html_ = "<span tabindex='0' id='" + data_terms + "' class='" + class_ + " " + extraClass + "' aria-label='Glossary term' role='dialog'><button href='#' class='bubble-close-btn' aria-label='close button'></button><p class='" +titleClass +"' tabindex='0'>" + title + "</p><p>" + text_content + "</p><a tabindex=0 class='close-btn-link' aria-label='close button' href='javascript:void(0)' onclick='return false' style='color: white'>close</a></span>"
+            var html_ = "<span tabindex='0' id='" + data_terms + "' class='" + class_ + " " + extraClass + "' aria-label='Glossary term' role='dialog'><button href='#' class='bubble-close-btn' aria-label='close button'></button><p class='" +titleClass +"' tabindex='0'>" + title + "</p><p>" + text_content + "</p><a tabindex=0 class='close-btn-link' aria-label='close button' href='javascript:void(0)' onclick='return false' style='color: white'>fermer</a></span>"
             let focused = $(document.activeElement)
 
             $(".bubble").remove();
