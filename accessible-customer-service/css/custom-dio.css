@@ -124,8 +124,14 @@ Slider/*/
 
 .slider-text>span {
     font-size: 1.1em;
-
 }
+
+a.slider-hyperlink:link,
+a.slider-hyperlink:visited,
+a.slider-hyperlink:hover{
+    color:#fff;
+}
+
 
 .img-container>img {
     object-fit: cover;
