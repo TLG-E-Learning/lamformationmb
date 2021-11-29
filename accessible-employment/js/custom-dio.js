@@ -42,6 +42,8 @@ jQuery(document).ready(function($) {
                         updateChangeLangUrl();
                         markCompletedPages();
                         addClassList();
+                        removeBasicHtml();
+                        
                     })
 
                 //functions
@@ -53,7 +55,7 @@ jQuery(document).ready(function($) {
                 updateAriaState(self);
                 closeOverlay();
                 initToggleMedia();
-
+            
 
             })
             .fail(function() {
@@ -98,6 +100,7 @@ jQuery(document).ready(function($) {
     })
     loadGlossarySection();
     addSecMenuToHamburger();
+   
     //reloadJsOnAjax();
     //getStringQuery();
     //showResumeOptions()
@@ -111,6 +114,7 @@ Loads initial ajax pages (left menu & current/page 1)
 
 $(window).load(function() {
     initAjax();
+   
 });
 
 /*/
@@ -300,11 +304,13 @@ function showDefinitionBubble() {
                         focused.focus();
                     })
 
+                    setPosition(termObj, selector);
+
 
                 });
 
 
-                setPosition(termObj, selector);
+               
 
                 $(window).resize(function() {
                     setPosition(termObj, selector);
@@ -351,7 +357,7 @@ function focusOnTitle() {
     $("#main-cont>section>h1").attr("tabindex", "-1");
     setTimeout(function() {
         $("#main-cont>section>h1").focus();
-    }, 500)
+    }, 100)
 
 }
 
@@ -692,7 +698,7 @@ function addClassList() {
     })
 }
 
-//
+//set position of glossary pop
 function setPosition(termObj, selectorObj) {
     var termObjOffset = termObj.offset();
     var vwportWidth = $(".cs-page").innerWidth();
@@ -720,3 +726,13 @@ function setPosition(termObj, selectorObj) {
     })
 
 }
+
+//remove switch to basic html version link
+
+function removeBasicHtml(){
+    console.log("removeBasicHTML");
+    let basicElement=$("#wb-tphp>li:last-child");
+    console.log("basicElement:"+basicElement.attr("class"));
+    basicElement.remove();
+}
+

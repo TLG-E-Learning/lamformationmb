@@ -142,6 +142,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         </div>
                         <div class="">
                             <p>&nbsp;</p>
+                            <p class="col-md-10 col-sm-10 col-lg-10">Attention : veuillez vous assurer que votre navigateur et vos paramètres de sécurité 
+                                autorisent les fenêtres flash et les téléchargements. Cela vous permettra d'enregistrer 
+                                vos certificats pour prouver que vous avez terminé les modules. Le Bureau de 
+                                l'accessibilité du Manitoba et lamformationmb.ca ne conservent aucun renseignement 
+                                concernant vos réussites. 
+                                </p>
+                                <p class="clearfix">&nbsp;</p> 
 
                             <button class="launch-button green" onclick="window.location.href='./accessible-customer-service/course.html'">
                 <span class="glyphicon glyphicon-education"></span>&nbsp;&nbsp;&nbsp;Lancer le module</button>
@@ -160,7 +167,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                                     <p><br>Les modules d’apprentissage sont offerts dans d’autres formats sur demande.</p>
                                     <p>Veuillez consulter ce site :
-                                        <a href="https://accessibilitymb.ca/contact.fr.html" aria-label="Accessibility M B . C A website" target="_blank" aria-hidden="true">accessibilitymb.ca/contact.fr.html</a>
+                                        <a href="https://accessibilitymb.ca/contact.fr.html" aria-label="Accessibility M B . C A website" target="_blank" aria-hidden="true">accessibilitymb.ca/contact.fr.html (nouvel onglet)</a>.
                                     </p>
                                 </div>
                             </div>
@@ -171,8 +178,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 <p>En plus d’offrir aux employés de la formation sur les politiques et procédures en matière d’accessibilité de votre organisme, ce guide permet d’aider les organismes et les entreprises à respecter les exigences de formation
                                     de la Norme d’accessibilité du Manitoba pour le service à la clientèle dans un contexte de groupe.</p>
 
-                                <p>Guide de l’animateur <a href="./accessible-customer-service/resources/CS_FacilitatorsGuide_Fr.pdf" aria-label="Télécharger le Guide de l’animateur (PDF)" target="_blank">(PDF)</a> <a target="_blank" href="./accessible-customer-service/resources/CS_FacilitatorsGuide_Fr.docx"
-                                        aria-label="Télécharger le Guide de l’animateur (WORD)">(Word)</a></p>
+                                <p><a href="./accessible-customer-service/resources/CS_FacilitatorsGuide_Fr.pdf" aria-label="Télécharger le Guide de l’animateur (PDF)" target="_blank">Guide de l’animateur (PDF)</a> </p><p><a target="_blank" href="./accessible-customer-service/resources/CS_FacilitatorsGuide_Fr.docx"
+                                        aria-label="Télécharger le Guide de l’animateur (WORD)">Guide de l’animateur(Word)</a></p>
                                 <p>&nbsp;</p>
                                 <p></p>
                             </div>
@@ -191,7 +198,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <a href="https://www.gov.mb.ca/accessibility/index.fr.html" target="_blank">Accessibilité</a>
                     </li>
                     <li>
-                        <a href="http://amalearningmb.ca/cs-home.html" target="_self">Anglaise</a>
+                        <a href="http://amalearningmb.ca/cs-home.html" target="_self">English</a>
                     </li>
                     <li class="">
                         <a href="https://www.gov.mb.ca/legal/disclaimer.fr.html" target="_blank">Avis de non-responsabilité</a>
@@ -209,6 +216,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!--[if gte IE 9 | !IE ]><!-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="./accessible-customer-service/js/wet-boew.min.js"></script>
+    <script>
+        function removeBasicHtml(){
+    console.log("removeBasicHTML");
+    let basicElement=$("#wb-tphp>li:nth-child(3)");
+    basicElement.remove();
+}
+    </script>
     <!--<![endif]-->
     <!--[if lt IE 9]> <script src="../wet-boew/js/ie8-wet-boew2.min.js"></script> <![endif]-->
 </body>
