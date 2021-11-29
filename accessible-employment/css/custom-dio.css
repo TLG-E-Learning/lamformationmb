@@ -18,7 +18,7 @@ Filename: custom-dio.css
                 font-family: sans-serif;
                 line-height: 160%;
             }
-            
+
             #wb-bar,
             #wb-bnr,
             header {
@@ -1162,6 +1162,14 @@ Harmburger Menu - Burgundy theme - Start
                 background-color: #0a3628;
                 border: 1px solid #0a3628;
             }
+
+            a{
+                text-decoration:none;
+                -webkit-text-decoration-skip-ink: none;
+                text-decoration-skip-ink: none;
+                text-decoration:underline;
+            }
+
             /*
 Harmburger Menu - Burgundy theme -End
 */

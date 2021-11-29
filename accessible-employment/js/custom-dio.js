@@ -730,9 +730,9 @@ function setPosition(termObj, selectorObj) {
 //remove switch to basic html version link
 
 function removeBasicHtml(){
-    console.log("removeBasicHTML");
-    let basicElement=$("#wb-tphp>li:last-child");
-    console.log("basicElement:"+basicElement.attr("class"));
-    basicElement.remove();
+    console.log("removeBasicHTML!!");
+    let basicElement=$("[href='?wbdisable=true']");
+    basicElement.attr("href","");
+    console.log("basicElement.attr:"+basicElement.attr("href"));
 }
 
