@@ -280,7 +280,7 @@ function showDefinitionBubble() {
                     break;                
                 }
 
-            var html_ = "<span tabindex='0' id='" + data_terms + "' class='" + class_ + " " + extraClass + "' aria-label='Glossary term' role='dialog'><button href='#' class='bubble-close-btn' aria-label='close button'></button><p class='" +titleClass +"' tabindex='0'>" + title + "</p><p>" + text_content + "</p><a tabindex=0 class='close-btn-link' aria-label='close button' href='javascript:void(0)' onclick='return false' style='color: white'>fermer</a></span>"
+            var html_ = "<span tabindex='0' id='" + data_terms + "' class='" + class_ + " " + extraClass + "' aria-label='Terme du glossaire' role='dialog'><button href='#' class='bubble-close-btn' aria-label='fermer'></button><p class='" +titleClass +"' tabindex='0'>" + title + "</p><p>" + text_content + "</p><a tabindex=0 class='close-btn-link'  href='javascript:void(0)' onclick='return false' style='color: white'>fermer</a></span>"
             let focused = $(document.activeElement)
 
             $(".bubble").remove();
@@ -294,7 +294,7 @@ function showDefinitionBubble() {
                         $(".term-title").parents().eq(0).focus();
                     }, 500);
 
-                    $("[aria-label='close button']").click(function() {
+                    $(".bubble-close-btn").click(function() {
                         setTimeout(function() {
                             $(".terms").removeClass("visible");
                         }, 10);

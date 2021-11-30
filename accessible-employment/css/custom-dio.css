@@ -270,6 +270,10 @@ Utilities/*/
             .border-no {
                 border: 0 #ccc solid;
             }
+
+            .bgcolor-gray{
+                background-color: #ccc;
+            }
             
             .font-red {
                 color: red;
@@ -871,7 +875,7 @@ overirdes/*/
             .bubble-close-btn {
                 z-index: 1000;
                 position: absolute;
-                right: 20px;
+                right: 10px;
                 top: 5px;
                 cursor: pointer;
                 background-color: #7d2546;
