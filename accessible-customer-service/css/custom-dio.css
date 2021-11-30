@@ -389,7 +389,7 @@ div.landing-slider-text>p {
 landing content/*/
 
 div.landing-container {
-    display: flex;
+     display: flex;
     flex-direction: row;
 }
 
@@ -1152,4 +1152,11 @@ button[aria-label='Restart']:before {
     margin-right: 20px;
     vertical-align: -12%;
 
+}
+
+a{
+    text-decoration:none;
+    -webkit-text-decoration-skip-ink: none;
+    text-decoration-skip-ink: none;
+    text-decoration:underline;
 }
